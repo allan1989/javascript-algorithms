@@ -1,5 +1,5 @@
 function objectLength(obj){
-
+    return Object.keys(obj).length
 }
 
 

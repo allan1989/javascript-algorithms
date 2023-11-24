@@ -1,6 +1,12 @@
 function getLongestWord(str) {
-
+    return Math.max(...str.split(' ').map(word => word.length))
 }
+
+// function getLongestWord(str) {
+//     const longuestWordLength = Math.max(...str.split(' ').map(word => word.length));
+//     const longuestWordIndex = str.split(' ').findIndex(word => word.length === longuestWordLength);
+//     return str.split(' ')[longuestWordIndex]
+// }
 
 
 /* ÉNONCÉ 📚 */

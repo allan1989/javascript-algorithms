@@ -1,5 +1,5 @@
 function interval(min,max,nb){
-
+  return nb >= min && nb <= max
 }
 
 

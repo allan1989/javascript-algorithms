@@ -1,6 +1,10 @@
-function similarEnd(str, end) {
-  
-}
+// function similarEnd(str, end) {
+//   return str.endsWith(end)
+// }
+
+// const similarEnd = (str, end) => str.endsWith(end);
+
+// const similarEnd = (str, end) => str.slice(-end.length) === end;
 
 
 /* ÉNONCÉ 📚 */

@@ -1,6 +1,5 @@
 function sameProps(obj, source){
-
-
+    return Object.keys(source).every(prop => Object.hasOwn(obj, prop) && obj[prop] === source[prop]);
 }
 
 

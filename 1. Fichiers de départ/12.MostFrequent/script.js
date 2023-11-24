@@ -1,6 +1,20 @@
 function mostFrequent(arr) {
+    let mapping = {};
+    for(let el of arr) {
+        if(mapping.hasOwnProperty(el)) {
+            mapping[el]++
+        }else {
+            mapping[el] = 1
+        }
+    }
 
+    let max = Math.max(...Object.values(mapping));
 
+    for(let el in mapping) {
+        if(mapping[el] === max) {
+            return el
+        }
+    }
 }
 
 

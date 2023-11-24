@@ -1,5 +1,6 @@
 function scanAndFind(data, source) {
-
+  const sourceKey = Object.keys(source)[0];
+  return data.filter(obj => Object.hasOwn(obj, sourceKey) && obj[sourceKey] === source[sourceKey])
 }
 
 

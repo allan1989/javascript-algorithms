@@ -1,5 +1,5 @@
 function differences(arr1, arr2) {
-
+    return [...arr1, ...arr2].filter((el, _, arr) => arr.indexOf(el) === arr.lastIndexOf(el))
 }
 
 

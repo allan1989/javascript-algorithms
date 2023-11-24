@@ -1,6 +1,9 @@
-function getTime() {
+// function getTime() {
+//     const now = new Date();
+//     return now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds()
+// };
 
-};
+const getTime = () => new Date().toTimeString().split(' ')[0]
 
 
 /* ÉNONCÉ 📚 */

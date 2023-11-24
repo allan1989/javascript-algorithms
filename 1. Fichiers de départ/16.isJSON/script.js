@@ -1,6 +1,10 @@
 function isJSON(obj){
-
-
+    try {
+        JSON.parse(obj);
+        return true
+    }catch {
+        return false
+    }
 }
 
 

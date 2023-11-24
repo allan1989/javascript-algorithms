@@ -1,5 +1,5 @@
 function getPosition(arr,num) {
-
+  return [...arr, num].sort((a, b) => a - b).findIndex(number => number === num);
 }
 
 

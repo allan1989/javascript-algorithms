@@ -1,5 +1,8 @@
 function capitalize(str) {
-
+    return str
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(-(word.length - 1)))
+        .join(' ')
 }
 
 
