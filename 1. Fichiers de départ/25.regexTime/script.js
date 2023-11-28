@@ -1,5 +1,5 @@
 function regexTime(str) {
-
+    return str.replace(/[0-9%-\/]/gm, '')
 }
 
 

@@ -1,5 +1,7 @@
 function isFrenchNumber(str){
- 
+  //const regex = /^([0-0][0-9])((-|.| )?)([0-9][0-9])((-|.| )?)([0-9][0-9])((-|.| )?([0-9][0-9])((-|.| )?)([0-9][0-9]))/gm;
+  const regex = /^0[1-9]([-. ]?[0-9]{2}){4}$/gm;
+  return regex.test(str)
 }
 
 
@@ -22,7 +24,10 @@ function isFrenchNumber(str){
 
 /* Tests à passer 🧪 */
 
-console.log(isFrenchNumber("06-44-64-90-21")); // true
+console.log(isFrenchNumber("06 44-64-90-21")); // true
 console.log(isFrenchNumber("06 44 zs 57 az xz")); // false
 console.log(isFrenchNumber("6548648768486468464564")); // false
 console.log(isFrenchNumber("1421")); // false
+console.log(isFrenchNumber("06.44.64.90.21")); // true
+console.log(isFrenchNumber("06 44 64 90 21")); // true
+console.log(isFrenchNumber("0644649021")); // true

@@ -1,6 +1,9 @@
 function investment(arr){
-
+  const weekDays = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+  // to do....
 }
+
+
 
 /* ÉNONCÉ 📚 */
 

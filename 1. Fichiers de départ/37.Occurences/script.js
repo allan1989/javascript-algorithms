@@ -1,5 +1,11 @@
 function occurrences(str, letter){
-
+  let counter = 0;
+  for(let char of str) {
+    if(char === letter) {
+      counter++
+    }
+  }
+  return counter;
 }
 
 /* ÉNONCÉ 📚 */

@@ -1,6 +1,6 @@
 function isValidHour(str){
-
-
+  const regex = /[0-2][0-9]:[0-5][0-9]:[0-9][0-9]/gm;
+  return regex.test(str)
 }
 
 
@@ -17,13 +17,3 @@ function isValidHour(str){
 console.log(isValidHour("11:35:30")); // true
 console.log(isValidHour("90:90:90")); // false
 console.log(isValidHour("qsdljqslkdjqslkjdqsklj")); // false
-
-
-
-
-
-
-
-
-
-

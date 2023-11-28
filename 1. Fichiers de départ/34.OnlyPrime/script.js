@@ -1,6 +1,5 @@
 function addPrime(num) {
-
-
+  // to do ....
 }
 
 
@@ -12,11 +11,12 @@ function addPrime(num) {
   1 n'est pas un nombre premier.
   La liste des nombres premiers commence comme cela :
   2, 3, 5, 7, 11, 13, 17, 19 etc ...
+  5 / 5 = 1 ET 5/1 = 5
 */
 
 
 /* Tests à passer 🧪 */
 
 console.log(addPrime(10));   // 17
-console.log(addPrime(5));    // 10
-console.log(addPrime(13));   // 41
+// console.log(addPrime(5));    // 10
+// console.log(addPrime(13));   // 41

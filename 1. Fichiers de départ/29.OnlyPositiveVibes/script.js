@@ -1,5 +1,11 @@
 function onlyPositives(arr) {
-
+  return arr.reduce((acc, curr) => {
+    if(curr > 0 && curr) {
+      return acc + curr;
+    }else {
+      return acc
+    }
+  }, 0)
 }
 
 
@@ -14,6 +20,6 @@ function onlyPositives(arr) {
 
 /* Tests à passer 🧪 */
 
-console.log((onlyPositives([1,-2,3,4,5])));         // 15
+console.log((onlyPositives([1,-2,3,4,5])));         // 13
 console.log((onlyPositives([-10,-20,-30])));        // 0
 console.log((onlyPositives([95,-45,10,-84,200])));  // 305

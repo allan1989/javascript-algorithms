@@ -1,6 +1,5 @@
 function flatten(arr) {
-
-
+  return JSON.stringify(arr).replace(/\[|\]/gm, '').split(',').filter(Boolean).map(el => JSON.parse(el));
 }
 
 
@@ -17,6 +16,7 @@ function flatten(arr) {
 
 
 /* Tests à passer 🧪 */
+
 console.log(flatten([1, {}, [3, [[4]]]]))              // [1, {}, 3, 4]
 console.log(flatten([1, [2], [3, [[4]]]]))             // [1,2,3,4]
 console.log(flatten([1, [], [3, [[4]]]]))              // [1, 3, 4]

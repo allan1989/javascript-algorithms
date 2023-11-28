@@ -1,12 +1,20 @@
-function merging() {
+// function merging() {
+//   return Object.values(arguments).flat().filter((el, i, arr) => arr.indexOf(el) === i);
+// }
 
+// const merging = (...args) => args.flat().filter((el, i, arr) => arr.indexOf(el) === i);
+
+function merging() {
+  return [...new Set([...arguments].flat())]
 }
+
 
 
 /* ÉNONCÉ 📚 */
 
 /*
-  Codez un algorithme qui fusionne les tableaux qu'il reçoit en argument en un seul tableau contenant seulement des valeurs uniques, tout en respectant l'ordre initial des éléments, et qui retourne ce tableau.
+  Codez un algorithme qui fusionne les tableaux qu'il reçoit en argument en un seul tableau contenant seulement des valeurs uniques, 
+  tout en respectant l'ordre initial des éléments, et qui retourne ce tableau.
 */
 
 /* Tests à passer 🧪 */

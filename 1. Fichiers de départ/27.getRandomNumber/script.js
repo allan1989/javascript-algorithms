@@ -1,5 +1,17 @@
-function getRandomNumber(min, max) {
 
+// non-sécurisée
+// function getRandomNumber(min, max) {
+//   return Math.floor(Math.random() * (max - min) + min)
+// }
+
+// sérurisée
+
+function getRandomNumber(min, max) {
+  let randomNumber = crypto.getRandomValues(new Uint32Array(1[0])) // crypto => API Navigateur
+
+  randomNumber = randomNumber / 4294967296;
+
+  return Math.floor(randomNumber * (max - min) + min)
 }
 
 /* ÉNONCÉ 📚 */

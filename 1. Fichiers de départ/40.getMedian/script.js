@@ -1,5 +1,10 @@
 function getMedian(array) {
-
+  const sortedArray = array.sort((a,b) => a - b);
+  if(array.length % 2 === 0) {
+    return ((array[(array.length / 2) - 1]) + array[(array.length / 2) + 1 - 1]) / 2
+  }else {
+    return array[((array.length + 1) / 2) - 1]
+  }
 }
 
 
